@@ -1,0 +1,79 @@
+{
+   "abstract" : "type constraints and coercions for URIs",
+   "author" : [
+      "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+   "keywords" : [],
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Types-URI",
+   "no_index" : {
+      "directory" : [
+         "eg",
+         "examples",
+         "inc",
+         "t",
+         "xt"
+      ]
+   },
+   "optional_features" : {},
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.17"
+         }
+      },
+      "develop" : {
+         "recommends" : {
+            "Dist::Inkt" : "0.001"
+         },
+         "requires" : {
+            "Test::Warnings" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Type::Library" : "0",
+            "Types::Path::Tiny" : "0",
+            "Types::Standard" : "0",
+            "Types::UUID" : "0",
+            "URI" : "0",
+            "URI::FromHash" : "0"
+         }
+      },
+      "test" : {
+         "recommends" : {
+            "Moose" : "2.0000"
+         },
+         "requires" : {
+            "Test::More" : "0.96",
+            "Test::Requires" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Types::URI" : {
+         "file" : "lib/Types/URI.pm",
+         "version" : "0.001"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "X_identifier" : "http://purl.org/NET/cpan-uri/dist/Types-URI/project",
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/Dist/Display.html?Queue=Types-URI"
+      },
+      "homepage" : "https://metacpan.org/release/Types-URI",
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.001"
+}
