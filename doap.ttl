@@ -14,7 +14,9 @@
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap-deps:develop-recommendation [ doap-deps:on "Dist::Inkt 0.001"^^doap-deps:CpanId ];
 	doap-deps:develop-requirement [ doap-deps:on "Test::Warnings"^^doap-deps:CpanId ];
-	doap-deps:runtime-requirement [ doap-deps:on "URI"^^doap-deps:CpanId ], [ doap-deps:on "URI::FromHash"^^doap-deps:CpanId ], [ doap-deps:on "Type::Library"^^doap-deps:CpanId ], [ doap-deps:on "Types::Path::Tiny"^^doap-deps:CpanId ], [ doap-deps:on "Types::Standard"^^doap-deps:CpanId ], [ doap-deps:on "Types::UUID"^^doap-deps:CpanId ];
+	doap-deps:runtime-requirement [ doap-deps:on "URI"^^doap-deps:CpanId ], [ doap-deps:on "URI::FromHash"^^doap-deps:CpanId ], [
+		doap-deps:on "Type::Library 0.028"^^doap-deps:CpanId;
+	], [ doap-deps:on "Types::Path::Tiny"^^doap-deps:CpanId ], [ doap-deps:on "Types::Standard"^^doap-deps:CpanId ], [ doap-deps:on "Types::UUID"^^doap-deps:CpanId ];
 	doap-deps:test-recommendation [ doap-deps:on "Moose 2.0000"^^doap-deps:CpanId ];
 	doap-deps:test-requirement [ doap-deps:on "Test::More 0.96"^^doap-deps:CpanId ], [ doap-deps:on "Test::Requires"^^doap-deps:CpanId ];
 	doap-deps:test-suggestion [
@@ -29,7 +31,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Types-URI";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-002>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-003>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-types-uri>;
@@ -64,6 +66,23 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-URI-0.002.tar.gz>;
 	doap:revision        "0.002"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-003>
+	a                    doap:Version;
+	dc:identifier        "Types-URI-0.003"^^xsd:string;
+	dc:issued            "2014-05-20"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Addition;
+			rdfs:label "Coercion from RDF::Trine::Namespace.";
+		], [
+			a doap-changeset:Addition;
+			rdfs:label "Coercion from XML::Namespace.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-URI-0.003.tar.gz>;
+	doap:revision        "0.003"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;

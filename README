@@ -39,7 +39,7 @@ DESCRIPTION
         from `HashRef`
             Coerces using URI::FromHash.
 
-        from RDF::Trine::Node::Resource
+        from RDF::Trine::Node::Resource, RDF::Trine::Namespace, XML::Namespace
             Uses "new" in URI.
 
     `FileUri`
@@ -54,7 +54,7 @@ DESCRIPTION
         from `HashRef`
             Coerces using URI::FromHash.
 
-        from RDF::Trine::Node::Resource
+        from RDF::Trine::Node::Resource, RDF::Trine::Namespace, XML::Namespace
             Uses "new" in URI.
 
     `DataUri`
@@ -69,7 +69,7 @@ DESCRIPTION
         from `HashRef`
             Coerces using URI::FromHash.
 
-        from RDF::Trine::Node::Resource
+        from RDF::Trine::Node::Resource, RDF::Trine::Namespace, XML::Namespace
             Uses "new" in URI.
 
 BUGS
