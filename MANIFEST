@@ -14,5 +14,6 @@ dist.ini
 doap.ttl
 lib/Types/URI.pm
 t/01uuid.t
+t/02trine.t
 t/50mxt-basic.t
 t/51mxt-fully-qualified.t

@@ -39,6 +39,9 @@ DESCRIPTION
         from `HashRef`
             Coerces using URI::FromHash.
 
+        from RDF::Trine::Node::Resource
+            Uses "new" in URI.
+
     `FileUri`
         A subtype of `Uri` covering URI::file. Coercions from:
 
@@ -47,6 +50,12 @@ DESCRIPTION
 
         from `Path`
             Uses "new" in URI::file. (See Types::Path::Tiny.)
+
+        from `HashRef`
+            Coerces using URI::FromHash.
+
+        from RDF::Trine::Node::Resource
+            Uses "new" in URI.
 
     `DataUri`
         A subtype of `Uri` covering URI::data. Coercions from:
@@ -57,13 +66,19 @@ DESCRIPTION
         from `ScalarRef`
             Uses "new" in URI::data.
 
+        from `HashRef`
+            Coerces using URI::FromHash.
+
+        from RDF::Trine::Node::Resource
+            Uses "new" in URI.
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=Types-URI>.
 
 SEE ALSO
     MooseX::Types::URI, Type::Tiny::Manual, URI, URI::file, URI::data,
-    URI::FromHash.
+    URI::FromHash, RDF::Trine::Node::Resource.
 
     Types::UUID, Types::Path::Tiny, Types::Standard.
 

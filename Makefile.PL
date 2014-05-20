@@ -35,19 +35,25 @@ my $meta = {
                         test      => {
                                        recommends => { Moose => "2.0000" },
                                        requires   => { "Test::More" => 0.96, "Test::Requires" => 0 },
+                                       suggests   => { "RDF::Trine::Node::Resource" => 0 },
                                      },
                       },
   "provides"       => {
-                        "Types::URI" => { file => "lib/Types/URI.pm", version => 0.001 },
+                        "Types::URI" => { file => "lib/Types/URI.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
                         bugtracker   => { web => "http://rt.cpan.org/Dist/Display.html?Queue=Types-URI" },
                         homepage     => "https://metacpan.org/release/Types-URI",
                         license      => ["http://dev.perl.org/licenses/"],
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-types-uri.git",
+                                          web  => "https://github.com/tobyink/p5-types-uri",
+                                        },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Types-URI/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;

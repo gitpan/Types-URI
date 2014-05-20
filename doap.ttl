@@ -17,6 +17,9 @@
 	doap-deps:runtime-requirement [ doap-deps:on "URI"^^doap-deps:CpanId ], [ doap-deps:on "URI::FromHash"^^doap-deps:CpanId ], [ doap-deps:on "Type::Library"^^doap-deps:CpanId ], [ doap-deps:on "Types::Path::Tiny"^^doap-deps:CpanId ], [ doap-deps:on "Types::Standard"^^doap-deps:CpanId ], [ doap-deps:on "Types::UUID"^^doap-deps:CpanId ];
 	doap-deps:test-recommendation [ doap-deps:on "Moose 2.0000"^^doap-deps:CpanId ];
 	doap-deps:test-requirement [ doap-deps:on "Test::More 0.96"^^doap-deps:CpanId ], [ doap-deps:on "Test::Requires"^^doap-deps:CpanId ];
+	doap-deps:test-suggestion [
+		doap-deps:on "RDF::Trine::Node::Resource"^^doap-deps:CpanId;
+	];
 	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=Types-URI>;
 	doap:created         "2014-03-24"^^xsd:date;
 	doap:developer       <http://purl.org/NET/cpan-uri/person/tobyink>;
@@ -26,7 +29,11 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Types-URI";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-001>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-002>;
+	doap:repository      [
+		a doap:GitRepository;
+		doap:browse <https://github.com/tobyink/p5-types-uri>;
+	];
 	doap:shortdesc       "type constraints and coercions for URIs".
 
 <http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-001>
@@ -37,6 +44,26 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-URI-0.001.tar.gz>;
 	doap:revision        "0.001"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Types-URI/v_0-002>
+	a                    doap:Version;
+	dc:identifier        "Types-URI-0.002"^^xsd:string;
+	dc:issued            "2014-05-20"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Addition;
+			rdfs:label "Coercion from RDF::Trine::Node::Resource.";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "Coercion from HashRef now also applies to DataUri and FileUri.";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Repo metadata should not have been commented out.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-URI-0.002.tar.gz>;
+	doap:revision        "0.002"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;

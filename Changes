@@ -6,4 +6,13 @@ Home page:    <https://metacpan.org/release/Types-URI>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Types-URI>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.002	2014-05-20
+
+ [ Packaging ]
+ - Repo metadata should not have been commented out.
+
+ [ Other ]
+ - Added: Coercion from RDF::Trine::Node::Resource.
+ - Coercion from HashRef now also applies to DataUri and FileUri.
+
 0.001	2014-04-13	Initial release
