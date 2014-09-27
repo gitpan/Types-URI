@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "type constraints and coercions for URIs",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,12 +18,10 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        develop   => {
-                                       recommends => { "Dist::Inkt" => 0.001 },
-                                       requires   => { "Test::Warnings" => 0 },
-                                     },
+                        develop   => { requires => { "Test::Warnings" => 0 } },
                         runtime   => {
                                        requires => {
+                                         "perl" => 5.008,
                                          "Type::Library" => 0.028,
                                          "Types::Path::Tiny" => 0,
                                          "Types::Standard" => 0,
@@ -33,13 +31,13 @@ my $meta = {
                                        },
                                      },
                         test      => {
-                                       recommends => { Moose => "2.0000" },
+                                       recommends => { IRI => 0.004, Moose => "2.0000" },
                                        requires   => { "Test::More" => 0.96, "Test::Requires" => 0 },
                                        suggests   => { "RDF::Trine::Node::Resource" => 0 },
                                      },
                       },
   "provides"       => {
-                        "Types::URI" => { file => "lib/Types/URI.pm", version => 0.003 },
+                        "Types::URI" => { file => "lib/Types/URI.pm", version => 0.004 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -51,9 +49,9 @@ my $meta = {
                                           url  => "git://github.com/tobyink/p5-types-uri.git",
                                           web  => "https://github.com/tobyink/p5-types-uri",
                                         },
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Types-URI/project",
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Types-URI/project",
                       },
-  "version"        => 0.003,
+  "version"        => 0.004,
 };
 
 my %dynamic_config;

@@ -39,6 +39,9 @@ DESCRIPTION
         from `HashRef`
             Coerces using URI::FromHash.
 
+        from `Iri`
+            Uses "new" in URI.
+
         from RDF::Trine::Node::Resource, RDF::Trine::Namespace, XML::Namespace
             Uses "new" in URI.
 
@@ -53,6 +56,9 @@ DESCRIPTION
 
         from `HashRef`
             Coerces using URI::FromHash.
+
+        from `Iri`
+            Uses "new" in URI.
 
         from RDF::Trine::Node::Resource, RDF::Trine::Namespace, XML::Namespace
             Uses "new" in URI.
@@ -69,8 +75,15 @@ DESCRIPTION
         from `HashRef`
             Coerces using URI::FromHash.
 
+        from `Iri`
+            Uses "new" in URI.
+
         from RDF::Trine::Node::Resource, RDF::Trine::Namespace, XML::Namespace
             Uses "new" in URI.
+
+    `Iri`
+        A class type for IRI. Coercions as per `Uri` above, plus can coerce
+        from `Uri`.
 
 BUGS
     Please report any bugs to
@@ -78,7 +91,7 @@ BUGS
 
 SEE ALSO
     MooseX::Types::URI, Type::Tiny::Manual, URI, URI::file, URI::data,
-    URI::FromHash, RDF::Trine::Node::Resource.
+    URI::FromHash, RDF::Trine::Node::Resource, IRI.
 
     Types::UUID, Types::Path::Tiny, Types::Standard.
 
