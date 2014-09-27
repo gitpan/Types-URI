@@ -26,9 +26,9 @@ optional_features: {}
 provides:
   Types::URI:
     file: lib/Types/URI.pm
-    version: '0.004'
+    version: '0.005'
 requires:
-  Type::Library: '0.028'
+  Type::Library: '1.000000'
   Types::Path::Tiny: '0'
   Types::Standard: '0'
   Types::UUID: '0'
@@ -41,4 +41,4 @@ resources:
   homepage: https://metacpan.org/release/Types-URI
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-types-uri.git
-version: '0.004'
+version: '0.005'

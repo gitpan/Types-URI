@@ -22,7 +22,7 @@ my $meta = {
                         runtime   => {
                                        requires => {
                                          "perl" => 5.008,
-                                         "Type::Library" => 0.028,
+                                         "Type::Library" => "1.000000",
                                          "Types::Path::Tiny" => 0,
                                          "Types::Standard" => 0,
                                          "Types::UUID" => 0,
@@ -37,7 +37,7 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "Types::URI" => { file => "lib/Types/URI.pm", version => 0.004 },
+                        "Types::URI" => { file => "lib/Types/URI.pm", version => 0.005 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -51,7 +51,7 @@ my $meta = {
                                         },
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Types-URI/project",
                       },
-  "version"        => 0.004,
+  "version"        => 0.005,
 };
 
 my %dynamic_config;
