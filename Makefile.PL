@@ -37,7 +37,7 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "Types::URI" => { file => "lib/Types/URI.pm", version => 0.005 },
+                        "Types::URI" => { file => "lib/Types/URI.pm", version => 0.006 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -51,7 +51,7 @@ my $meta = {
                                         },
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Types-URI/project",
                       },
-  "version"        => 0.005,
+  "version"        => 0.006,
 };
 
 my %dynamic_config;

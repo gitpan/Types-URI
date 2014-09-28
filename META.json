@@ -63,7 +63,7 @@
    "provides" : {
       "Types::URI" : {
          "file" : "lib/Types/URI.pm",
-         "version" : "0.005"
+         "version" : "0.006"
       }
    },
    "release_status" : "stable",
@@ -82,5 +82,5 @@
       },
       "x_identifier" : "http://purl.org/NET/cpan-uri/dist/Types-URI/project"
    },
-   "version" : "0.005"
+   "version" : "0.006"
 }
